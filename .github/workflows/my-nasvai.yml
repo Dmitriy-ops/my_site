@@ -51,7 +51,7 @@ jobs:
         echo: "Var2 = ${{ env.VAR2 }}"
         echo: $LOCAL_VAR
       env:
-        LOCAK_VAR: "This is Super local Environment variable"
+        LOCAL_VAR: "This is Super local Environment variable"
 
     - name: Printinf Deployment Package
       run : echo "Deploy package name is ${{ env.DEPLOY_PACKAGE_NAME }}"
