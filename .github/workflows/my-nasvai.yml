@@ -12,13 +12,13 @@ jobs:
 
  my-testing: 
    runs-on: ubuntu-latest
-    steps:
+   steps:
       - name: Print Hello Message
       run: echo "Hello World from Testing job"
 
  my-deploy:
    runs-on: ubuntu-latest
-    steps:
+   steps:
       - name: Print Hello Message
       run: echo "Hello World from Testing job"
      
