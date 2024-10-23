@@ -5,20 +5,19 @@ name: My-GitHubActions-Basics
 
 on:
  push:
-   branches: 
-      - main
+  branches: 
+   - main
 
 jobs:
-
  my-testing: 
-   runs-on: ubuntu-latest
+  runs-on: ubuntu-latest
    steps:
-      - name: Print Hello Message
-      run: echo "Hello World from Testing job"
+    - name: Print Hello Message
+    run: echo "Hello World from Testing job"
 
  my-deploy:
-   runs-on: ubuntu-latest
+  runs-on: ubuntu-latest
    steps:
-      - name: Print Hello Message
-      run: echo "Hello World from Testing job"
+    - name: Print Hello Message
+    run: echo "Hello World from Testing job"
      
