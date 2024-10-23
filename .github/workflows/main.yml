@@ -3,7 +3,7 @@
 
 name: My-GitHubActions-Basics
 
-  push:
+push:
     branches: [ "main" ]
 
 
