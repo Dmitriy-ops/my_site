@@ -49,7 +49,7 @@ jobs:
       run : |
         echo: "Var1 = ${{ env.VAR1 }}"
         echo: "Var2 = ${{ env.VAR2 }}"
-        echo: "$LOCAL_VAR"
+        echo: "${{ env.LOCAL_VAR}}"
       env:
         LOCAL_VAR: "This is Super local Environment variable"
 
