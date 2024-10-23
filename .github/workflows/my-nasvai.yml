@@ -1,9 +1,12 @@
 #__________Dmitriy Kalistratov production__________
 #________________Github Action________________
 name: My-GitHubActions-Basics
+env:
+  APPLICATION_NAME    : "MyFlask"
+  DEPLOY_PACKAGE_NAME : "flask-deploy-ver-${{ github.sha }}"
 
 on:
-  push:
+  push: 
     branches: 
       - main
 
@@ -14,6 +17,12 @@ jobs:
     steps:
     - name: Print Hello Message
       run: echo "Hello World from Testing job"
+      
+    - name: Execure few commands
+      run: |
+        echo "Hello Message 1"
+        echo "Hello Message 1"
+        echo "Application name ${{ env.APPLICATION_NAME }}"
 
 
   my-deploy:
@@ -23,4 +32,7 @@ jobs:
     steps:
     - name: Print Hello Message
       run: echo "Hello World from Deploy job"
+
+    - name: Printinf Deployment Package
+      run: echo "Deploy package name is ${{ env.DEPLOY_PACKAGE_NAME }}"
      
