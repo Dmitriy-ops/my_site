@@ -1,23 +1,25 @@
 #__________Dmitriy Kalistratov production__________
 #________________Github Action________________
-
 name: My-GitHubActions-Basics
 
 on:
- push:
-  branches: 
-   - main
+  push:
+    branches: 
+      - main
 
 jobs:
   my-testing: 
     runs-on: ubuntu-latest
-     steps:
-     - name: Print Hello Message
-       run: echo "Hello World from Testing job"
+    
+    steps:
+    - name: Print Hello Message
+      run: echo "Hello World from Testing job"
+
 
   my-deploy:
     runs-on: ubuntu-latest
-     steps:
-     - name: Print Hello Message
-       run: echo "Hello World from Testing job"
+    
+    steps:
+    - name: Print Hello Message
+      run: echo "Hello World from Deploy job"
      
